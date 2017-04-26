@@ -7,9 +7,8 @@
 //----SASS VARIABLES----//
 $fullwidth : 100%;
 
-// background: linear-gradient(direction, color-stop1, color-stop2, ...);
+
 body{
-	// background: linear-gradient(#FFDF04, black);
 	background-color: #FFDF04;
 	margin: 0px;
 	font-family: 'Avenir', 'Open Sans', sans-serif;
@@ -33,8 +32,9 @@ img{
 	margin-top: 50px;
 }
 
-//----Input Fields----//
-input[type=text]{
+// ----MIXINS----//
+// Creates common styles used throughout project
+@mixin text-box{
 padding: 20px 20px;
 margin: 8px 0;
 box-sizing: border-box;
@@ -42,16 +42,16 @@ text-align:center;
 background-color: transparent ;
 border-radius: 50px;
 border: 2px white solid;
+
+}
+
+//----Input Fields----//
+input[type=text]{
+	@include text-box;
 }
 
 input[type=password]{
-padding: 20px 20px;
-margin: 8px 0;
-box-sizing: border-box;
-text-align:center;
-background-color: transparent;
-border-radius: 50px;
-border: 2px white solid;
+	@include text-box;
 
 
 }
@@ -71,10 +71,9 @@ border: 2px white solid;
 // ----BUTTON----//
  
  .btn-default{
+ 	@include text-box;
  	padding: 10px 10px;
-	margin: 8px 0;
  	background-color: white;
- 	border-radius: 50px;
  	border: 2px #9e9e9e solid;
 
 
