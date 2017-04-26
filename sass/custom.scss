@@ -18,46 +18,61 @@ img{
 	width: $fullwidth;
 }
 
-
-input[type=text]{
-padding: 12px 20px;
-margin: 8px 0;
-box-sizing: border-box;
-text-align:center;
-background-color: transparent;
-border-radius: 50px;
-border: 2px black solid;
-
-}
-input[type=password]{
-padding: 12px 20px;
-margin: 8px 0;
-box-sizing: border-box;
-text-align:center;
-background-color: transparent;
-border-radius: 50px;
-border: 2px black solid;
-
-
-}
 #main-container{
 	width: $fullwidth;
 	height: $fullwidth;
 }
 
 .details{
-	text-align: center;
-	padding: 50px;
-	
+	margin: 0px 20px;
 }
 
-.username{
-	padding-bottom: 20px;
+.logo-gif{
+	margin-top: 50px;
 }
 
-.password{
-	padding-bottom: 20px;
+//----Input Fields----//
+input[type=text]{
+padding: 20px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+text-align:center;
+background-color: transparent ;
+border-radius: 50px;
+border: 2px white solid;
 }
+
+input[type=password]{
+padding: 20px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+text-align:center;
+background-color: transparent;
+border-radius: 50px;
+border: 2px white solid;
+
+
+}
+
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;    
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 15px 12px;
+    pointer-events: none;
+}
+
+// ----BUTTON----//
+ 
+ .btn-default{
+ 	background-color: transparent;
+ 	
+ }
+
 
 
 
