@@ -10,10 +10,11 @@ $main-color : #FFDF04;
 
 
 body{
+	width: $fullwidth;
 	background-color: $main-color;
 	margin: 0px;
 	font-family: 'Avenir', 'Open Sans', sans-serif;
-
+	
 }
 
 img{
@@ -27,6 +28,7 @@ img{
 
 .details{
 	margin: 0px 20px;
+
 }
 
 .logo-gif{
@@ -40,9 +42,13 @@ padding: 20px 20px;
 margin: 8px 0;
 box-sizing: border-box;
 text-align:center;
-background-color: transparent ;
+background-color: transparent;
 border-radius: 50px;
 border: 2px white solid;
+transition: 1s all ease;
+-webkit-transition: 1s all ease;
+-o-transition: 1s all ease;
+-moz-transition: 1s all ease;
 
 }
 
@@ -51,14 +57,23 @@ input[type=text]{
 	@include text-box;
 }
 
+input[type=text]:hover{
+	background-color: white;
+}
+
 input[type=password]{
 	@include text-box;
-
-
 }
+
+input[type=password]:hover{
+	background-color: white;
+}
+
 
 .left-inner-addon {
     position: relative;
+
+
 }
 .left-inner-addon input {
     padding-left: 30px;    
@@ -80,13 +95,6 @@ input[type=password]{
 
  }
 
-
-
-.form-control:hover{
-	background-color: white;
-	-webkit-transition: 2s;
-
-}
 
 
 

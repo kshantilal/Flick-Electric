@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #FFDF04;
+  width: 100%;
+  background-color: #ffdf04;
   margin: 0px;
   font-family: 'Avenir', 'Open Sans', sans-serif; }
 
@@ -28,7 +29,14 @@ input[type=text] {
   text-align: center;
   background-color: transparent;
   border-radius: 50px;
-  border: 2px white solid; }
+  border: 2px white solid;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  -moz-transition: 1s all ease; }
+
+input[type=text]:hover {
+  background-color: white; }
 
 input[type=password] {
   padding: 20px 20px;
@@ -37,7 +45,14 @@ input[type=password] {
   text-align: center;
   background-color: transparent;
   border-radius: 50px;
-  border: 2px white solid; }
+  border: 2px white solid;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  -moz-transition: 1s all ease; }
+
+input[type=password]:hover {
+  background-color: white; }
 
 .left-inner-addon {
   position: relative; }
@@ -58,12 +73,10 @@ input[type=password] {
   background-color: transparent;
   border-radius: 50px;
   border: 2px white solid;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  -moz-transition: 1s all ease;
   padding: 10px 10px;
   background-color: white;
   border: 2px #9e9e9e solid; }
-
-.form-control:hover {
-  background-color: white;
-  -webkit-transition: 2s; }
-
-/*# sourceMappingURL=custom.css.map */
