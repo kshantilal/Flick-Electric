@@ -1,0 +1,67 @@
+*{
+	text-decoration: none;
+	padding: 0px;
+	box-sizing: border-box;	
+}
+
+//----SASS VARIABLES----//
+$fullwidth : 100%;
+
+body{
+	background-color: #FFDF04;
+	margin: 0px;
+	font-family: 'Avenir', 'Open Sans', sans-serif;
+
+}
+
+img{
+	width: $fullwidth;
+}
+
+
+input[type=text]{
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+text-align:center;
+background-color: transparent;
+border-radius: 50px;
+border: 2px black solid;
+
+}
+input[type=password]{
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+text-align:center;
+background-color: transparent;
+border-radius: 50px;
+border: 2px black solid;
+
+
+}
+#main-container{
+	width: $fullwidth;
+	height: $fullwidth;
+}
+
+.details{
+	text-align: center;
+	padding: 50px;
+	
+}
+
+.username{
+	padding-bottom: 20px;
+}
+
+.password{
+	padding-bottom: 20px;
+}
+
+
+
+
+
+
+
