@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  background-color: #FFDF04;
+  background-color: #ffdf04;
   margin: 0px;
   font-family: 'Avenir', 'Open Sans', sans-serif; }
 
@@ -94,9 +94,13 @@ input[type=password]:hover {
   text-align: center;
   width: 300px;
   margin: 0 auto;
-  color: #FFDF04;
+  color: #ffdf04;
   padding-top: 380px;
   font-size: 20px;
   letter-spacing: 2px; }
 
-/*# sourceMappingURL=custom.css.map */
+.maori-tiki {
+  width: 20%;
+  height: 20%;
+  float: right;
+  margin: 20px; }
