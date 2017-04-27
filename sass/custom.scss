@@ -53,6 +53,13 @@ transition: 1s all ease;
 
 }
 
+@mixin text-center{
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+	
+}
+
 //----Input Fields----//
 input[type=text]{
 	@include text-box;
@@ -106,10 +113,17 @@ input[type=password]:hover{
 	background-size: cover;
 	background-position: center; 
 	background-repeat: no-repeat;
+
 }
 
 
+.Home-Automation-text{
+	@include text-center;
+	color: $main-color;
+	padding-top: 380px;
+	font-size: 20px;
+	letter-spacing: 2px;
 
-
+}
 
 

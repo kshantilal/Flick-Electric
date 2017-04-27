@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  background-color: #ffdf04;
+  background-color: #FFDF04;
   margin: 0px;
   font-family: 'Avenir', 'Open Sans', sans-serif; }
 
@@ -89,3 +89,14 @@ input[type=password]:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+
+.Home-Automation-text {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  color: #FFDF04;
+  padding-top: 380px;
+  font-size: 20px;
+  letter-spacing: 2px; }
+
+/*# sourceMappingURL=custom.css.map */
