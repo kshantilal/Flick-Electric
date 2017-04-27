@@ -106,7 +106,7 @@ input[type=password]:hover{
 
 // ----Homepage CSS---- //
 
-#background-image{
+.background-image{
 	width: 100%;
 	height: 100vh;
 	background-image: url('../img/flick-forest.jpg');
@@ -123,14 +123,47 @@ input[type=password]:hover{
 	padding-top: 380px;
 	font-size: 20px;
 	letter-spacing: 2px;
-
 }
+
+
+.maori-text{
+	display: none;
+}
+
+.english-text{
+	display: block;
+}
+
+
+
+// ----Maori Translation---- //
 
 .maori-tiki{
-	width: 20%;
-	height: 20%;
 	float: right;
 	margin: 20px;
+	display: block;
 }
+
+
+.maori-tiki img{
+	width: 50%;
+	height: 50%;
+	margin: 0px;
+	float: right;
+	// display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
