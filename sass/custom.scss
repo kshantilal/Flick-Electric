@@ -36,6 +36,14 @@ img{
 	margin-top: 50px;
 }
 
+// ----NAV-BAR---- //
+
+.navbar-toggle{
+	float: left;
+	margin-left: 15px;
+	border-radius: 7px;
+}
+
 // ----MIXINS----//
 // Creates common styles used throughout project
 @mixin text-box{
@@ -61,6 +69,8 @@ transition: 1s all ease;
 }
 
 //----Input Fields----//
+
+
 input[type=text]{
 	@include text-box;
 }
@@ -125,7 +135,6 @@ input[type=password]:hover{
 	letter-spacing: 2px;
 }
 
-
 .maori-text{
 	display: none;
 }
@@ -150,8 +159,9 @@ input[type=password]:hover{
 	height: 50%;
 	margin: 0px;
 	float: right;
-	// display: block;
 }
+
+
 
 
 

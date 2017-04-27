@@ -23,6 +23,11 @@ img {
 .logo-gif {
   margin-top: 50px; }
 
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+  border-radius: 7px; }
+
 input[type=text] {
   padding: 20px 20px;
   margin: 8px 0;
