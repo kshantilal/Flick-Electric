@@ -139,21 +139,10 @@ input[type=password]:hover {
 .english-text {
   display: block; }
 
-.maori-tiki-sleep {
-  float: right;
-  margin: 10px;
-  display: block; }
-
-.maori-tiki-sleep img {
-  width: 50%;
-  height: 50%;
-  margin: 0px;
-  float: right; }
-
 .maori-tiki {
   float: right;
   margin: 10px;
-  display: none; }
+  display: block; }
 
 .maori-tiki img {
   width: 50%;
