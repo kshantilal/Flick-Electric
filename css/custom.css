@@ -46,6 +46,12 @@ img {
   background-repeat: no-repeat;
   background-position: 50%; }
 
+.contact {
+  margin: 0 10px;
+  background-image: url("../img/contact60.png");
+  background-repeat: no-repeat;
+  background-position: 50%; }
+
 li {
   height: 60px;
   width: 60px; }
@@ -123,7 +129,7 @@ input[type=password]:hover {
   width: 300px;
   margin: 0 auto;
   color: #FFDF04;
-  padding-top: 380px;
+  padding-top: 330px;
   font-size: 20px;
   letter-spacing: 2px; }
 
@@ -133,10 +139,21 @@ input[type=password]:hover {
 .english-text {
   display: block; }
 
-.maori-tiki {
+.maori-tiki-sleep {
   float: right;
   margin: 10px;
   display: block; }
+
+.maori-tiki-sleep img {
+  width: 50%;
+  height: 50%;
+  margin: 0px;
+  float: right; }
+
+.maori-tiki {
+  float: right;
+  margin: 10px;
+  display: none; }
 
 .maori-tiki img {
   width: 50%;
