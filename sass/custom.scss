@@ -5,59 +5,23 @@
 }
 
 //----SASS VARIABLES----//
-$fullwidth : 100%;
-$main-color : #FFDF04;
-
-
-body{
-	width: $fullwidth;
-	background-color: $main-color;
-	margin: 0px;
-	font-family: 'Avenir', 'Open Sans', sans-serif;
-	
-}
-
-img{
-	width: $fullwidth;
-	height: $fullwidth;
-}
-
-#main-container{
-	width: $fullwidth;
-	height: $fullwidth;
-}
-
-.details{
-	margin: 0px 20px;
-
-}
-
-.logo-gif{
-	margin-top: 50px;
-}
-
-// ----NAV-BAR---- //
-
-.navbar-toggle{
-	float: left;
-	margin-left: 15px;
-	border-radius: 7px;
-}
+$max : 100%;
+$primary-color : #FFDF04;
 
 // ----MIXINS----//
 // Creates common styles used throughout project
 @mixin text-box{
-padding: 20px 20px;
-margin: 8px 0;
-box-sizing: border-box;
-text-align:center;
-background-color: transparent;
-border-radius: 50px;
-border: 2px white solid;
-transition: 1s all ease;
--webkit-transition: 1s all ease;
--o-transition: 1s all ease;
--moz-transition: 1s all ease;
+	padding: 20px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	text-align:center;
+	background-color: transparent;
+	border-radius: 50px;
+	border: 2px white solid;
+	transition: 1s all ease;
+	-webkit-transition: 1s all ease;
+	-o-transition: 1s all ease;
+	-moz-transition: 1s all ease;
 
 }
 
@@ -67,6 +31,75 @@ transition: 1s all ease;
 	margin: 0 auto;
 	
 }
+
+
+body{
+	width: $max;
+	background-color: $primary-color;
+	margin: 0px;
+	font-family: 'Avenir', 'Open Sans', sans-serif;
+	
+}
+
+img{
+	width: $max;
+	height: $max;
+}
+
+#main-container{
+	width: $max;
+	height: $max;
+}
+
+// ----Login Page CSS---- //
+.details{
+	margin: 0px 20px;
+
+}
+
+.logo-gif{
+	margin-top: 50px;
+}
+
+
+// ----NAV-BAR---- //
+
+.navbar-toggle{
+	float: left;
+	margin-left: 15px;
+	border-radius: 7px;
+}
+
+
+.audio{
+	margin: 0 10px;
+	background-image: url('../img/audio60.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+
+}
+
+.lights{
+	margin: 0 10px;
+	background-image: url('../img/light60.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.thermometer{
+	margin: 0 10px;
+	background-image: url('../img/thermometer60.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+
+
+li{
+	height: 60px;
+	width: 60px;
+}
+
 
 //----Input Fields----//
 
@@ -89,26 +122,26 @@ input[type=password]:hover{
 
 
 .left-inner-addon {
-    position: relative;
+	position: relative;
 
 
 }
 .left-inner-addon input {
-    padding-left: 30px;    
+	padding-left: 30px;    
 }
 .left-inner-addon i {
-    position: absolute;
-    padding: 15px 12px;
-    pointer-events: none;
+	position: absolute;
+	padding: 15px 12px;
+	pointer-events: none;
 }
 
 // ----BUTTON----//
  
- .btn-default{
- 	@include text-box;
- 	padding: 10px 10px;
- 	background-color: white;
- 	border: 2px #9e9e9e solid;
+ .btn-default{ //override boostrap button css
+	@include text-box;
+	padding: 10px 10px;
+	background-color: white;
+	border: 2px #9e9e9e solid;
 
 
  }
@@ -117,44 +150,43 @@ input[type=password]:hover{
 // ----Homepage CSS---- //
 
 .background-image{
-	width: 100%;
+	width: $max;
 	height: 100vh;
 	background-image: url('../img/flick-forest.jpg');
 	background-size: cover;
 	background-position: center; 
 	background-repeat: no-repeat;
-
+	padding-top: 50px;
 }
 
 
-.Home-Automation-text{
+// ---- English to Maori Translation ---- //
+
+.Home-Automation-text{	// Welcome to your home automation text
 	@include text-center;
-	color: $main-color;
+	color: $primary-color;
 	padding-top: 380px;
 	font-size: 20px;
 	letter-spacing: 2px;
 }
 
-.maori-text{
+.maori-text{	//Hides the maori text under the english text
 	display: none;
 }
 
-.english-text{
+.english-text{	//Shows the english text
 	display: block;
 }
 
 
-
-// ----Maori Translation---- //
-
-.maori-tiki{
+.maori-tiki{	//Positioning of the Maori Tiki image
 	float: right;
-	margin: 20px;
+	margin: 10px;
 	display: block;
 }
 
 
-.maori-tiki img{
+.maori-tiki img{	//Maori tiki image - top right
 	width: 50%;
 	height: 50%;
 	margin: 0px;
