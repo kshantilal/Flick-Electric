@@ -91,7 +91,7 @@ img{
 	margin: 0 10px;
 	background-image: url('../img/audio60.png');
 	background-repeat: no-repeat;
-	background-position: 50%;
+	background-position: $half;
 
 }
 
@@ -146,11 +146,8 @@ input[type=password]:hover{
 .left-inner-addon {
 	position: relative;
 
+}
 
-}
-.left-inner-addon input {
-	padding-left: 30px;    
-}
 .left-inner-addon i {
 	position: absolute;
 	padding: 15px 12px;
@@ -191,13 +188,13 @@ input[type=password]:hover{
 	letter-spacing: 2px;
 }
 
-.maori-text{	//Hides the maori text under the english text
+.maori-text{	//Hides the maori text
 	display: none;
 }
 
 .english-text{	//Shows the english text
 	display: block;
-}
+}	
 
 
 // ----Maori Image---- //
