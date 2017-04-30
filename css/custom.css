@@ -106,8 +106,7 @@ input[type=password]:hover {
 
 .left-inner-addon i {
   position: absolute;
-  padding: 15px 12px;
-  pointer-events: none; }
+  padding: 15px 12px; }
 
 .btn-default {
   padding: 20px 20px;

@@ -12,6 +12,7 @@ $half: 50%;
 $primary-color : #FFDF04;
 
 
+
 // ----MIXINS----//
 // Creates common styles used throughout project
 @mixin text-box{
@@ -153,7 +154,6 @@ input[type=password]:hover{
 .left-inner-addon i {
 	position: absolute;
 	padding: 15px 12px;
-	pointer-events: none;
 }
 
 // ----BUTTON----//
