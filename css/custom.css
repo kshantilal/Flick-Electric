@@ -28,6 +28,13 @@ img {
   margin-left: 15px;
   border-radius: 7px; }
 
+.navbar-default {
+  background-color: black;
+  border-color: white; }
+
+#navbar {
+  border-color: white; }
+
 .audio {
   margin: 0 10px;
   background-image: url("../img/audio60.png");

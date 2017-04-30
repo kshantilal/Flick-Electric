@@ -7,6 +7,7 @@
 
 //----SASS VARIABLES----//
 $max : 100%;
+$half: 50%;
 $primary-color : #FFDF04;
 
 
@@ -72,6 +73,14 @@ img{
 	border-radius: 7px;
 }
 
+.navbar-default{
+	background-color: black;
+	border-color: white;
+}
+#navbar{
+	border-color: white;
+}
+
 
 .audio{
 	margin: 0 10px;
@@ -85,23 +94,22 @@ img{
 	margin: 0 10px;
 	background-image: url('../img/light60.png');
 	background-repeat: no-repeat;
-	background-position: 50%;
+	background-position: $half;
 }
 
 .thermometer{
 	margin: 0 10px;
 	background-image: url('../img/thermometer60.png');
 	background-repeat: no-repeat;
-	background-position: 50%;
+	background-position: $half;
 }
 
 .contact{
 	margin: 0 10px;
 	background-image: url('../img/contact60.png');
 	background-repeat: no-repeat;
-	background-position: 50%;
+	background-position: $half;
 }
-
 
 
 li{
@@ -202,8 +210,8 @@ input[type=password]:hover{
 }
 
 .maori-tiki img{//Maori tiki image - top right + resizes image to 50%
-	width: 50%;
-	height: 50%;
+	width: $half;
+	height: $half;
 	margin: 0px;
 	float: right;
 }
@@ -225,8 +233,10 @@ input[type=password]:hover{
 
 .no-background{
 	height: 100vh;
-	background-color: black; //Changes colour on the top section background
+	background-color: black; //Changes background color on sections
 }
+
+
 
 
 
