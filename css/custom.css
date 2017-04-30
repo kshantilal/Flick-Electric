@@ -35,6 +35,9 @@ img {
 #navbar {
   border-color: white; }
 
+.navbar-toggle.collapsed {
+  border-color: transparent; }
+
 .audio {
   margin: 0 10px;
   background-image: url("../img/audio60.png");
@@ -59,8 +62,8 @@ img {
   background-repeat: no-repeat;
   background-position: 50%; }
 
-li {
-  height: 60px;
+.navbar li {
+  height: 70px;
   width: 60px; }
 
 input[type=text] {

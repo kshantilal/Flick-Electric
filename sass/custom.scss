@@ -5,6 +5,7 @@
 }
 
 
+
 //----SASS VARIABLES----//
 $max : 100%;
 $half: 50%;
@@ -35,13 +36,11 @@ $primary-color : #FFDF04;
 	
 }
 
-
 body{
 	width: $max;
 	background-color: $primary-color;
 	margin: 0px;
 	font-family: 'Avenir', 'Open Sans', sans-serif;
-	
 }
 
 img{
@@ -65,12 +64,13 @@ img{
 }
 
 
-// ----NAV-BAR---- //
+// ----NAV-BAR OVERIDE---- //
 
 .navbar-toggle{
 	float: left;
 	margin-left: 15px;
 	border-radius: 7px;
+	// border-color: transparent;
 }
 
 .navbar-default{
@@ -80,7 +80,12 @@ img{
 #navbar{
 	border-color: white;
 }
+.navbar-toggle.collapsed{
+	border-color: transparent;
+}
 
+
+// ----NAV-BAR Icons---- //
 
 .audio{
 	margin: 0 10px;
@@ -112,8 +117,8 @@ img{
 }
 
 
-li{
-	height: 60px;
+.navbar li{
+	height: 70px;
 	width: 60px;
 }
 
@@ -227,8 +232,9 @@ input[type=password]:hover{
 	font-size: 40px; 
 }
 
-.section-image{
+.section-image{ // NOTE: when the size changes to tablet change height to 100vh in media query
 	position: relative;
+
 }
 
 .no-background{
