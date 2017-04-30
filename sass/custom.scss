@@ -121,7 +121,9 @@ img{
 	height: 70px;
 	width: 60px;
 }
-
+ li a{
+	height: $max;
+}
 
 //----Input Fields----//
 
@@ -240,7 +242,19 @@ input[type=password]:hover{
 }
 
 
+// ----Circles---- // 
 
+.circle{
+	@include text-center; 
+	width: $max;
+	padding-top: 20px;
+
+}
+
+.circle img{
+	width: 70%;
+	height: 70%;
+}
 
 
 
