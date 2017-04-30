@@ -166,7 +166,6 @@ input[type=password]:hover{
 	padding-top: 50px;
 }
 
-
 // ---- English to Maori Translation ---- //
 
 .Home-Automation-text{	// Welcome to your home automation text
@@ -186,23 +185,46 @@ input[type=password]:hover{
 }
 
 
-
-// ----Maori Image Toggle---- //
+// ----Maori Image---- //
 
 .maori-tiki{	//Positioning of the Maori Tiki image
 	float: right;
 	margin: 10px;
 	display: block;
 }
+.tiki-section{	//Places the tiki on top of the section image
+	position: absolute;
+	top: 50px;
+	left: 200px;
 
+}
 
-.maori-tiki img{	//Maori tiki image - top right
+.maori-tiki img{//Maori tiki image - top right + resizes image to 50%
 	width: 50%;
 	height: 50%;
 	margin: 0px;
 	float: right;
 }
 
+// Top Section Image and text
+
+.section-text{
+	position: absolute;
+	width: $max;
+	text-align: center;
+	top: 150px;
+	color: white;
+	font-size: 40px; 
+}
+
+.section-image{
+	position: relative;
+}
+
+.no-background{
+	height: 100vh;
+	background-color: black;
+}
 
 
 

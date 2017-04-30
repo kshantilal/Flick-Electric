@@ -144,10 +144,30 @@ input[type=password]:hover {
   margin: 10px;
   display: block; }
 
+.tiki-section {
+  position: absolute;
+  top: 50px;
+  left: 200px; }
+
 .maori-tiki img {
   width: 50%;
   height: 50%;
   margin: 0px;
   float: right; }
+
+.section-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 150px;
+  color: white;
+  font-size: 40px; }
+
+.section-image {
+  position: relative; }
+
+.no-background {
+  height: 100vh;
+  background-color: black; }
 
 /*# sourceMappingURL=custom.css.map */
