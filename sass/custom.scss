@@ -4,9 +4,11 @@
 	box-sizing: border-box;	
 }
 
+
 //----SASS VARIABLES----//
 $max : 100%;
 $primary-color : #FFDF04;
+
 
 // ----MIXINS----//
 // Creates common styles used throughout project
@@ -223,7 +225,7 @@ input[type=password]:hover{
 
 .no-background{
 	height: 100vh;
-	background-color: black;
+	background-color: black; //Changes colour on the top section background
 }
 
 
