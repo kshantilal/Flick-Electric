@@ -205,20 +205,22 @@ input[type=password]:hover{
 	float: right;
 	margin: 10px;
 	display: block;
+	width: 25%;
 }
+
+
+.maori-tiki img{//Maori tiki image - top right + resizes image to 50%
+margin: 0px;
+float: right;
+}
+
+
 .tiki-section{	//Places the tiki on top of the section image
 	position: absolute;
 	top: 50px;
-	left: 200px;
-
+	left: 70%; //70%
 }
 
-.maori-tiki img{//Maori tiki image - top right + resizes image to 50%
-	width: $half;
-	height: $half;
-	margin: 0px;
-	float: right;
-}
 
 // Top Section Image and text
 
@@ -231,10 +233,10 @@ input[type=password]:hover{
 	font-size: 40px; 
 }
 
-.section-image{ // NOTE: when the size changes to tablet change height to 100vh in media query
-	position: relative;
+// .section-image{ // NOTE: when the size changes to tablet change height to 100vh in media query
+// 	position: relative;
 
-}
+// }
 
 .no-background{
 	height: 100vh;

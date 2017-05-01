@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  background-color: #ffdf04;
+  background-color: #FFDF04;
   margin: 0px;
   font-family: 'Avenir', 'Open Sans', sans-serif; }
 
@@ -137,7 +137,7 @@ input[type=password]:hover {
   text-align: center;
   width: 300px;
   margin: 0 auto;
-  color: #ffdf04;
+  color: #FFDF04;
   padding-top: 330px;
   font-size: 20px;
   letter-spacing: 2px; }
@@ -151,18 +151,17 @@ input[type=password]:hover {
 .maori-tiki {
   float: right;
   margin: 10px;
-  display: block; }
+  display: block;
+  width: 25%; }
+
+.maori-tiki img {
+  margin: 0px;
+  float: right; }
 
 .tiki-section {
   position: absolute;
   top: 50px;
-  left: 200px; }
-
-.maori-tiki img {
-  width: 50%;
-  height: 50%;
-  margin: 0px;
-  float: right; }
+  left: 70%; }
 
 .section-text {
   position: absolute;
@@ -171,9 +170,6 @@ input[type=password]:hover {
   top: 150px;
   color: white;
   font-size: 40px; }
-
-.section-image {
-  position: relative; }
 
 .no-background {
   height: 100vh;
@@ -189,3 +185,5 @@ input[type=password]:hover {
 .circle img {
   width: 70%;
   height: 70%; }
+
+/*# sourceMappingURL=custom.css.map */
