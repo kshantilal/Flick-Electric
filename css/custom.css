@@ -135,7 +135,9 @@ input[type=password]:hover {
   border: 2px #9e9e9e solid; }
 
 .btn-new {
-  width: 65px; }
+  width: 65px;
+  background-color: transparent;
+  color: white; }
 
 .background-image {
   width: 100%;
