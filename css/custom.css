@@ -183,13 +183,17 @@ input[type=password]:hover {
   width: 300px;
   margin: 0 auto;
   width: 100%;
-  padding-top: 20px; }
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .circle img {
   width: 60%; }
 
 .switches {
   text-align: center; }
+
+.switch-text {
+  color: white; }
 
 /* The switch - the box around the slider */
 .switch {
@@ -226,10 +230,10 @@ input[type=password]:hover {
   transition: .4s; }
 
 input:checked + .slider {
-  background-color: #2196F3; }
+  background-color: #FFDF04; }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3; }
+  box-shadow: 0 0 1px #FFDF04; }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
