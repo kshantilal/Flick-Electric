@@ -1,60 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Homepage</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/fav-icon.jpg">
+	<title>Homepage</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/fav-icon.jpg">
 </head>
 <body>
-    <div id="main-container">
+	<div id="main-container">
 
-        <!-- Fixed navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-            
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="audio"><a href="audio.html"></a></li>
-                    <li class="lights"><a href="#"></a></li>
-                    <li class="thermometer"><a href="#"></a></li>
-                    <li class="contact"><a href="#"></a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="audio"><a href="audio.html"></a></li>
+					<li class="lights"><a href="#"></a></li>
+					<li class="thermometer"><a href="#"></a></li>
+					<li class="contact"><a href="#"></a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
 
-            </div>
-        </nav>
-
-
-        <!-- Background Image -->
-
-        <div class="no-background">
-            <div class="section-image">
-                <img src="img/speakers.png" alt="section-image">
-                <p class="section-text english-text">AUDIO</p>
-                <p class="section-text maori-text">ORORONGO</p>
-                <div class="maori-tiki tiki-section">
-                    <img src="img/tiki-button.png" alt="maori-tiki">
-                </div> 
-            </div>
-
-            <div class="circle">
-                <img src="img/circle.png" alt="circle">
-            </div> 
-
-        </div><!--Background Image-->
+			</div>
+		</nav>
 
 
-    </div><!--MAIN CONTAINER-->
+		<!-- Background Image -->
+
+		<div class="no-background">
+			<div class="section-image">
+				<img src="img/speakers.png" alt="section-image">
+				<p class="section-text english-text">AUDIO</p>
+				<p class="section-text maori-text">ORORONGO</p>
+				<div class="maori-tiki tiki-section">
+					<img src="img/tiki-button.png" alt="maori-tiki">
+				</div> 
+			</div>
+
+			<div class="circle">
+				<img src="img/circle.png" alt="circle">
+			</div>
+
+			<!-- Switches -->
+			<div class="col-xs-4">
+				<div class="switches">
+					<div id="switch1">
+						<p class="switch-text">Master</p>
+						<label class="switch">
+							<input type="checkbox">
+							<div class="slider round"></div>
+						</label>
+					</div>
+					<div id="switch2">
+						<p class="switch-text">Kids Room</p>
+						<label class="switch">
+							<input type="checkbox">
+							<div class="slider round"></div>
+						</label>
+					</div>
+				</div>				
+			
+			</div>
+
+			<div class="col-xs-4">
+				<div class="switches">
+					<div id="switch1">
+						<p class="switch-text">Kitchen</p>
+						<label class="switch">
+							<input type="checkbox">
+							<div class="slider round"></div>
+						</label>
+					</div>
+					<div id="switch2">
+						<p class="switch-text">Lounge</p>
+						<label class="switch">
+							<input type="checkbox">
+							<div class="slider round"></div>
+						</label>
+					</div>
+				</div>				
+			
+			</div>
+			<div class="col-xs-4">
+				<div class="switches">
+					<div id="switch1">
+						<p class="switch-text">Bathroom</p>
+						<label class="switch">
+							<input type="checkbox">
+							<div class="slider round"></div>
+						</label>
+					</div>
+					<div id="switch2">
+						<p class="switch-text">Outdoor</p>
+						<label class="switch">
+							<input type="checkbox">
+							<div class="slider round"></div>
+						</label>
+					</div>
+				</div>				
+			
+			</div>
+
+			
+
+
+		</div><!--Background Image-->
+
+
+	</div><!--MAIN CONTAINER-->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
