@@ -202,7 +202,8 @@ input[type=password]:hover {
   padding-bottom: 10px; }
 
 .circle img {
-  width: 60%; }
+  width: 60%;
+  position: relative; }
 
 .switches {
   text-align: center; }
