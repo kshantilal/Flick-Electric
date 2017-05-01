@@ -3,6 +3,36 @@
 	padding: 0px;
 	box-sizing: border-box;	
 }
+//breakpoints, change as needed for your site
+$pageMobileWidth: 375px;
+$pageTabletWidth: 1024px;
+$pageFullWidth: 1280px;
+//the mixins. there is no mediaMobile mixin because that should be the default styling
+@mixin mediaTablet {
+    @media (min-width: #{$pageTabletWidth}) and (max-width: #{$pageFullWidth}) {
+        @content;
+    }
+}
+@mixin mediaDesktop {
+    @media (min-width: #{$pageFullWidth}) {
+        @content;
+    }
+}
+//an example of how to use the mixin. 
+//only the width will change if you resize the window.
+//the height and background-color will apply to all 3 window widths.
+#main-container {
+    width: $pageMobileWidth;
+    height: 200px;
+    @include mediaTablet {
+        width: $pageTabletWidth;
+    }
+    
+
+    @include mediaDesktop {
+        width: $pageFullWidth;
+    }
+}
 
 
 

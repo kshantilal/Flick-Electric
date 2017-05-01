@@ -55,65 +55,53 @@
 			<!-- Switches -->
 			<div class="col-xs-4">
 				<div class="switches">
-					<div id="switch1">
-						<p class="switch-text english-text">Master Room</p>
-						<p class="switch-text maori-text">ruma ariki</p>
-						<label class="switch">
-							<input type="checkbox">
-							<div class="slider round"></div>
-						</label>
-					</div>
-					<div id="switch2">
-						<p class="switch-text english-text">Kids Room</p>
-						<p class="switch-text maori-text">ruma tamariki</p>
-						<label class="switch">
-							<input type="checkbox">
-							<div class="slider round"></div>
-						</label>
-					</div>
+					<p class="switch-text english-text">Master Room</p>
+					<p class="switch-text maori-text">ruma ariki</p>
+					<label class="switch">
+						<input id="switch1" class="toggleSwitch" type="checkbox">
+						<div class="slider round"></div>
+					</label>
+					<p class="switch-text english-text">Kids Room</p>
+					<p class="switch-text maori-text">ruma tamariki</p>
+					<label class="switch">
+						<input id="switch2" class="toggleSwitch" type="checkbox">
+						<div class="slider round"></div>
+					</label>
 				</div>				
 			
 			</div>
 
 			<div class="col-xs-4">
 				<div class="switches">
-					<div id="switch3">
-						<p class="switch-text english-text">Kitchen</p>
-						<p class="switch-text maori-text">kīhini</p>						
-						<label class="switch">
-							<input type="checkbox">
-							<div class="slider round"></div>
-						</label>
-					</div>
-					<div id="switch4">
-						<p class="switch-text english-text">Lounge</p>
-						<p class="switch-text maori-text">rüma</p>						
-						<label class="switch">
-							<input type="checkbox">
-							<div class="slider round"></div>
-						</label>
-					</div>
+					<p class="switch-text english-text">Kitchen</p>
+					<p class="switch-text maori-text">k&#299;hini</p>						
+					<label class="switch">
+						<input id="switch3" class="toggleSwitch" type="checkbox">
+						<div class="slider round"></div>
+					</label>
+					<p class="switch-text english-text">Lounge</p>
+					<p class="switch-text maori-text">r&#252;ma</p>						
+					<label class="switch">
+						<input id="switch4" class="toggleSwitch" type="checkbox">
+						<div class="slider round"></div>
+					</label>
 				</div>				
 			
 			</div>
 			<div class="col-xs-4">
 				<div class="switches">
-					<div id="switch5">
-						<p class="switch-text english-text">Bathroom</p>
-						<p class="switch-text maori-text">kaukau</p>
-						<label class="switch">
-							<input type="checkbox">
-							<div class="slider round"></div>
-						</label>
-					</div>
-					<div id="switch6">
-						<p class="switch-text english-text">Outdoor</p>
-						<p class="switch-text maori-text">waho</p>
-						<label class="switch">
-							<input type="checkbox">
-							<div class="slider round"></div>
-						</label>
-					</div>
+					<p class="switch-text english-text">Bathroom</p>
+					<p class="switch-text maori-text">kaukau</p>
+					<label class="switch">
+						<input id="switch5" class="toggleSwitch" type="checkbox">
+						<div class="slider round"></div>
+					</label>
+					<p class="switch-text english-text">Outdoor</p>
+					<p class="switch-text maori-text">waho</p>
+					<label class="switch">
+						<input id="switch6" class="toggleSwitch" type="checkbox">
+						<div class="slider round"></div>
+					</label>
 				</div>				
 			
 			</div>
@@ -127,8 +115,27 @@
 	</div><!--MAIN CONTAINER-->
 
 
+<!-- Pages with switches, add this section before you call jQuery -->
+<script type="text/javascript">
+if (localStorage.getItem("switches") !== null) {
+	var Storage = JSON.parse(localStorage.getItem("switches"));
+	for (var i = 0; i < Storage.length; i++) {
+		if(Storage[i]['active'] === 'true' ){
+			var SwitchID = Storage[i]['switch'];
+			var SwitchExists = document.getElementById(SwitchID);
+			if(SwitchExists !== null){
+				SwitchExists.checked = true;
+			}
+		}
+	};
+}
+</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/custom.js"></script>
+<!-- Pages with switches, add this line after jQuery -->
+<!-- you need to give all of your switches a unique ID, and the class of toggleSwtich -->
+<script type="text/javascript" src="js/Toggle.js"></script>
 </body>
 </html>

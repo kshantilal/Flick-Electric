@@ -3,9 +3,19 @@
   padding: 0px;
   box-sizing: border-box; }
 
+#main-container {
+  width: 375px;
+  height: 200px; }
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    #main-container {
+      width: 1024px; } }
+  @media (min-width: 1280px) {
+    #main-container {
+      width: 1280px; } }
+
 body {
   width: 100%;
-  background-color: #FFDF04;
+  background-color: #ffdf04;
   margin: 0px;
   font-family: 'Avenir', 'Open Sans', sans-serif; }
 
@@ -137,7 +147,7 @@ input[type=password]:hover {
   text-align: center;
   width: 300px;
   margin: 0 auto;
-  color: #FFDF04;
+  color: #ffdf04;
   padding-top: 330px;
   font-size: 20px;
   letter-spacing: 2px; }
@@ -230,10 +240,10 @@ input[type=password]:hover {
   transition: .4s; }
 
 input:checked + .slider {
-  background-color: #FFDF04; }
+  background-color: #ffdf04; }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #FFDF04; }
+  box-shadow: 0 0 1px #ffdf04; }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -246,5 +256,3 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%; }
-
-/*# sourceMappingURL=custom.css.map */
