@@ -9,29 +9,29 @@ $pageTabletWidth: 1024px;
 $pageFullWidth: 1280px;
 //the mixins. there is no mediaMobile mixin because that should be the default styling
 @mixin mediaTablet {
-    @media (min-width: #{$pageTabletWidth}) and (max-width: #{$pageFullWidth}) {
-        @content;
-    }
+	@media (min-width: #{$pageTabletWidth}) and (max-width: #{$pageFullWidth}) {
+		@content;
+	}
 }
 @mixin mediaDesktop {
-    @media (min-width: #{$pageFullWidth}) {
-        @content;
-    }
+	@media (min-width: #{$pageFullWidth}) {
+		@content;
+	}
 }
 //an example of how to use the mixin. 
 //only the width will change if you resize the window.
 //the height and background-color will apply to all 3 window widths.
 #main-container {
-    width: $pageMobileWidth;
-    height: 200px;
-    @include mediaTablet {
-        width: $pageTabletWidth;
-    }
-    
+	width: $pageMobileWidth;
+	height: 200px;
+	@include mediaTablet {
+		width: $pageTabletWidth;
+	}
+	
 
-    @include mediaDesktop {
-        width: $pageFullWidth;
-    }
+	@include mediaDesktop {
+		width: $pageFullWidth;
+	}
 }
 
 
@@ -279,20 +279,6 @@ float: right;
 }
 
 
-// ----Circles---- // 
-
-.circle{
-	@include text-center; 
-	width: $max;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.circle img{
-	width: 60%;
-	position: relative;
-
-}
 
 // ----Switches---- //
 
@@ -362,6 +348,54 @@ input:checked + .slider:before {
 .slider.round:before {
 	border-radius: 50%;
 }
+
+// Circles
+
+.circle {
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	background-color: transparent;
+	color: #222;
+	text-align: center;
+}
+
+	.circle:after {
+	display: block;
+	padding-bottom: 100%;
+	width: 100%;
+	height: 0;
+	border-radius: 50%;
+	content: "";
+	border: 3px solid $primary-color;
+}
+
+	.circle_inner {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+	.circle_wrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+	border-color: $primary-color;
+}
+
+	.circle_content {
+	display: table-cell;
+	padding: 1em;
+	vertical-align: middle;
+	color: white;
+}
+
+
+
 
 
 
