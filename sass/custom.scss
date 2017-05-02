@@ -11,6 +11,9 @@ $pageFullWidth: 1280px;
 @mixin mediaTablet {
 	@media (min-width: #{$pageTabletWidth}) and (max-width: #{$pageFullWidth}) {
 		@content;
+		// .circle.col-lg-12{
+
+		// }
 	}
 }
 @mixin mediaDesktop {
@@ -349,11 +352,11 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
-// Circles
+// ----Circles---- //
 
 .circle {
 	width: 60%;
-	margin: 0 auto;
+	margin: 10px auto;
 	position: relative;
 	display: block;
 	background-color: transparent;
@@ -384,7 +387,6 @@ input:checked + .slider:before {
 	display: table;
 	width: 100%;
 	height: 100%;
-	border-color: $primary-color;
 }
 
 	.circle_content {
@@ -395,7 +397,9 @@ input:checked + .slider:before {
 }
 
 
-
+// #minus{
+// 	float: right;
+// }
 
 
 

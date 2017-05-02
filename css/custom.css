@@ -253,7 +253,7 @@ input:checked + .slider:before {
 
 .circle {
   width: 60%;
-  margin: 0 auto;
+  margin: 10px auto;
   position: relative;
   display: block;
   background-color: transparent;
@@ -280,8 +280,7 @@ input:checked + .slider:before {
 .circle_wrapper {
   display: table;
   width: 100%;
-  height: 100%;
-  border-color: #FFDF04; }
+  height: 100%; }
 
 .circle_content {
   display: table-cell;
