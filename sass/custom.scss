@@ -72,7 +72,7 @@ $primary-color : #FFDF04;
 
 body{
 	width: $max;
-	background-color: $primary-color;
+	background-color: black;
 	margin: 0px;
 	font-family: 'Avenir', 'Open Sans', sans-serif;
 }
@@ -375,6 +375,7 @@ input:checked + .slider:before {
 }
 
 	.circle_inner {
+
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -397,9 +398,9 @@ input:checked + .slider:before {
 }
 
 
-// #minus{
-// 	float: right;
-// }
+#minus{
+	float: right;
+}
 
 
 

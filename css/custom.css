@@ -15,7 +15,7 @@
 
 body {
   width: 100%;
-  background-color: #FFDF04;
+  background-color: black;
   margin: 0px;
   font-family: 'Avenir', 'Open Sans', sans-serif; }
 
@@ -287,5 +287,8 @@ input:checked + .slider:before {
   padding: 1em;
   vertical-align: middle;
   color: white; }
+
+#minus {
+  float: right; }
 
 /*# sourceMappingURL=custom.css.map */
