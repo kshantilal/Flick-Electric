@@ -63,7 +63,8 @@ img {
 .navbar li {
   height: 70px;
   width: 60px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 40px; }
 
 li a {
   height: 100%; }

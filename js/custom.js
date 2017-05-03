@@ -24,9 +24,5 @@ $(document).ready(function() {
 
 	});
 
-	$("#plus").click(function() {
-    	$(this).addClass('.circle-new');
-}); 
-
   
   });
