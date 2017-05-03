@@ -10,19 +10,31 @@ $(document).ready(function() {
 	});
 
 	// When the Minus and Plus buttons are clicked, #value increases by 5
-     $(function(){
+	//#value is the number inside the circles which change
+	$(function(){
 
-	    var valueElement = $('#value');
-	    function incrementValue(e){
-	        valueElement.text(Math.max(parseInt(valueElement.text()) + e.data.increment, 0));
-	        return false;
-	    }
+		var valueElement = $('#value');
+		function incrementValue(e){
+			valueElement.text(Math.max(parseInt(valueElement.text()) + e.data.increment, 0));
+			return false;
+		}
 
-	    $('#plus').bind('click', {increment: 5}, incrementValue);
+		$('#plus').bind('click', {increment: 5}, incrementValue);
 
-	    $('#minus').bind('click', {increment: -5}, incrementValue);
+		$('#minus').bind('click', {increment: -5}, incrementValue);
 
 	});
 
-  
-  });
+	// $('#plus').click(function(){
+	// 	$('#value').removeClass('blue');
+	// 	$('#value').addClass('red');
+	// });
+
+	// $('#minus').click(function(){
+	// 	$('#value').removeClass('red');
+	// 	$('#value').addClass('blue');
+	// })
+
+
+
+});
