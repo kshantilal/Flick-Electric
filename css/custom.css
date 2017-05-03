@@ -60,6 +60,14 @@ img {
 .navbar-toggle.collapsed {
   border-color: transparent; }
 
+.navbar li {
+  height: 70px;
+  width: 60px;
+  margin: 0 auto; }
+
+li a {
+  height: 100%; }
+
 .audio {
   margin: 0 10px;
   background-image: url("../img/audio60.png");
@@ -83,13 +91,6 @@ img {
   background-image: url("../img/contact60.png");
   background-repeat: no-repeat;
   background-position: 50%; }
-
-.navbar li {
-  height: 70px;
-  width: 60px; }
-
-li a {
-  height: 100%; }
 
 .logo {
   padding-top: 15px;

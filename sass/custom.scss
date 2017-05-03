@@ -136,6 +136,14 @@ img{
 .navbar-toggle.collapsed{
 	border-color: transparent;
 }
+.navbar li{
+	height: 70px;
+	width: 60px;
+	margin: 0 auto; //centers icons in navbar
+}
+ li a{ //makes the link in the list bigger so it is easier to click. covers more of the image. 
+	height: $max;
+}
 
 
 // ----NAV-BAR Icons---- //
@@ -169,14 +177,6 @@ img{
 	background-position: $half;
 }
 
-
-.navbar li{
-	height: 70px;
-	width: 60px;
-}
- li a{
-	height: $max;
-}
 
 .logo{
 	padding-top: 15px;
@@ -397,7 +397,7 @@ input:checked + .slider:before {
 	text-align: center;
 }
 
-	.circle:after {
+	.circle:after { // the styling of the circle border radius.
 	display: block;
 	padding-bottom: 100%;
 	width: 100%;
@@ -432,8 +432,11 @@ input:checked + .slider:before {
 
 
 #plus{
-	float: right; //places the minus button the right.
+	float: right; //places the minus button on the right.
 }
+
+
+
 
 
 
