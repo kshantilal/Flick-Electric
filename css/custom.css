@@ -9,12 +9,20 @@
     #main-container {
       width: 1024px; }
       #main-container .logo {
-        left: 47%; } }
+        left: 47%; }
+      #main-container .navbar-nav {
+        margin: 6px; }
+      #main-container .section-image {
+        position: relative;
+        height: 100vh; } }
   @media (min-width: 1280px) {
     #main-container {
       width: 1280px; }
       #main-container .logo {
-        left: 48%; } }
+        left: 48%; }
+      #main-container .section-image {
+        position: relative;
+        height: 100vh; } }
 
 body {
   width: 100%;
@@ -306,7 +314,7 @@ input:checked + .slider:before {
   vertical-align: middle;
   color: white; }
 
-#minus {
+#plus {
   float: right; }
 
 /*# sourceMappingURL=custom.css.map */

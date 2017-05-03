@@ -29,6 +29,15 @@ $pageFullWidth: 1280px;
 		.logo{
 			left: 47%;
 		}
+		.navbar-nav{
+			margin: 6px;
+		}
+
+		.section-image{ //makes image the size of the viewport
+		position: relative;
+		height: 100vh;
+
+		}
 
 	}
 	
@@ -37,6 +46,11 @@ $pageFullWidth: 1280px;
 		width: $pageFullWidth;
 		.logo{
 			left: 48%;
+		}
+		.section-image{ //makes image the size of the viewport
+			position: relative;
+			height: 100vh;
+
 		}
 	}
 }
@@ -302,7 +316,6 @@ input[type=password]:hover{
 }
 
 
-
 // ----Switches---- //
 
 .switches{
@@ -410,7 +423,7 @@ input:checked + .slider:before {
 	height: 100%;
 }
 
-	.circle_content {
+	.circle_content { //centers the number in the middle of the circle
 	display: table-cell;
 	padding: 1em;
 	vertical-align: middle;
@@ -418,8 +431,8 @@ input:checked + .slider:before {
 }
 
 
-#minus{
-	float: right;
+#plus{
+	float: right; //places the minus button the right.
 }
 
 
