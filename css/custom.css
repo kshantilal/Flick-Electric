@@ -4,18 +4,21 @@
   box-sizing: border-box; }
 
 #main-container {
-  width: 375px;
-  height: 200px; }
+  width: 375px; }
   @media (min-width: 1024px) and (max-width: 1280px) {
     #main-container {
-      width: 1024px; } }
+      width: 1024px; }
+      #main-container .logo {
+        left: 47%; } }
   @media (min-width: 1280px) {
     #main-container {
-      width: 1280px; } }
+      width: 1280px; }
+      #main-container .logo {
+        left: 48%; } }
 
 body {
   width: 100%;
-  background-color: black;
+  background-color: #FFDF04;
   margin: 0px;
   font-family: 'Avenir', 'Open Sans', sans-serif; }
 
@@ -35,6 +38,7 @@ img {
 
 .navbar-toggle {
   float: left;
+  margin-top: 20px;
   margin-left: 15px;
   border-radius: 7px; }
 
@@ -78,6 +82,14 @@ img {
 
 li a {
   height: 100%; }
+
+.logo {
+  padding-top: 15px;
+  margin: 0 auto;
+  width: 60px;
+  text-align: center;
+  position: absolute;
+  left: 42%; }
 
 input[type=text] {
   padding: 20px 20px;
@@ -137,7 +149,11 @@ input[type=password]:hover {
 .btn-new {
   width: 65px;
   background-color: transparent;
-  color: white; }
+  color: white;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease; }
 
 .background-image {
   width: 100%;
@@ -168,15 +184,17 @@ input[type=password]:hover {
   margin: 10px;
   display: block;
   width: 25%; }
-
-.maori-tiki img {
-  margin: 0px;
-  float: right; }
+  .maori-tiki img {
+    margin: 0px;
+    float: right; }
 
 .tiki-section {
-  position: absolute;
-  top: 50px;
-  left: 70%; }
+  width: 40px; }
+
+.language {
+  text-align: center;
+  color: white;
+  margin: 0px; }
 
 .section-text {
   position: absolute;

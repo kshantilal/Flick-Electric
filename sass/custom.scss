@@ -11,9 +11,7 @@ $pageFullWidth: 1280px;
 @mixin mediaTablet {
 	@media (min-width: #{$pageTabletWidth}) and (max-width: #{$pageFullWidth}) {
 		@content;
-		// .circle.col-lg-12{
 
-		// }
 	}
 }
 @mixin mediaDesktop {
@@ -23,17 +21,23 @@ $pageFullWidth: 1280px;
 }
 //an example of how to use the mixin. 
 //only the width will change if you resize the window.
-//the height and background-color will apply to all 3 window widths.
+//Changes for media query in here
 #main-container {
 	width: $pageMobileWidth;
-	height: 200px;
 	@include mediaTablet {
 		width: $pageTabletWidth;
+		.logo{
+			left: 47%;
+		}
+
 	}
 	
 
 	@include mediaDesktop {
 		width: $pageFullWidth;
+		.logo{
+			left: 48%;
+		}
 	}
 }
 
@@ -72,7 +76,7 @@ $primary-color : #FFDF04;
 
 body{
 	width: $max;
-	background-color: black;
+	background-color: $primary-color;
 	margin: 0px;
 	font-family: 'Avenir', 'Open Sans', sans-serif;
 }
@@ -102,6 +106,7 @@ img{
 
 .navbar-toggle{
 	float: left;
+	margin-top:	20px; 
 	margin-left: 15px;
 	border-radius: 7px;
 	// border-color: transparent;
@@ -159,6 +164,14 @@ img{
 	height: $max;
 }
 
+.logo{
+	padding-top: 15px;
+	margin: 0 auto;
+	width: 60px;
+	text-align: center;
+	position: absolute;
+	left: 42%;
+}
 //----Input Fields----//
 
 
@@ -204,6 +217,10 @@ input[type=password]:hover{
 	width: 65px;
 	background-color: transparent;
 	color: white;
+	transition: 0.3s all ease;
+	-webkit-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
 }
 
 
@@ -240,24 +257,27 @@ input[type=password]:hover{
 
 // ----Maori Image---- //
 
-.maori-tiki{	//Positioning of the Maori Tiki image
-	float: right;
-	margin: 10px;
-	display: block;
-	width: 25%;
-}
+.maori-tiki{
+	img{
+		margin: 0px;
+		float: right;
 
-
-.maori-tiki img{//Maori tiki image - top right + resizes image to 50%
-margin: 0px;
-float: right;
-}
+	}	//Positioning of the Maori Tiki image
+		float: right;
+		margin: 10px;
+		display: block;
+		width: 25%;
+		}
 
 
 .tiki-section{	//Places the tiki on top of the section image
-	position: absolute;
-	top: 50px;
-	left: 70%; //70%
+	width: 40px;
+}
+
+.language{
+	text-align: center;
+	color: white;
+	margin: 0px;
 }
 
 
@@ -401,6 +421,8 @@ input:checked + .slider:before {
 #minus{
 	float: right;
 }
+
+
 
 
 
