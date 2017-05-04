@@ -11,7 +11,7 @@ $primary-color : #FFDF04;
 //breakpoints, change as needed for your site
 $pageMobileWidth: 375px;
 $pageTabletWidth: 1024px;
-$pageFullWidth: 1440px;
+$pageFullWidth: 1980px;
 
 //the mixins. there is no mediaMobile mixin because that should be the default styling
 @mixin mediaTablet {
@@ -107,7 +107,6 @@ $pageFullWidth: 1440px;
 			margin: 0 70px;
 			position: absolute;
 			top: 136px;
-			bottom: 0px;
 			left: 0px;
 			right: 0px;
 		}
@@ -136,25 +135,68 @@ $pageFullWidth: 1440px;
 
 		.background-splash{
 			height: 400px;
-			margin-top: 150px
+			margin-top: 150px;
 		}
 	}
 	
 
 	@include mediaDesktop {
 		width: $pageFullWidth;
-		.logo{
-			left: 48%;
-		}
+
 		.section-image{ //makes image the size of the viewport
 			position: relative;
 			height: 100vh;
-
 		}
 
 		.Home-Automation-text{
-			padding-top: 500px;
+			padding-top: 575px;
 		}
+
+		//Login Page Breakpoints
+		#signin-details{
+			width: 700px;
+			margin: 0 auto;
+		}
+		input[type=text]{
+			padding: 30px 30px;
+		}
+		input[type=password]{
+			padding: 30px 30px;
+		}
+		.left-inner-addon i{
+			padding: 25px 25px;
+		}
+
+		#enter{
+			padding: 25px;
+		}
+
+		//NAV BAR
+		.logo{
+			left: 47%;
+			width: 110px;
+		}
+
+		.maori-tiki{
+			width: 85px;
+		}
+
+		.navbar-nav{
+			margin: 17px;
+
+		}
+		
+		//Functions Sections
+		#action{
+			top: 278px;
+			margin: 0 200px;
+		}
+
+		.btn-new{
+			width: 100px;
+			padding: 25px;
+		}
+
 	}
 }
 
@@ -307,7 +349,7 @@ input[type=password]:hover{
 
 .btn-new{ //changes the size of buttons in the different sections eg audio, lights, temperature
 	width: 65px;
-	background-color: transparent;
+	background:rgba(0,0,0,0.3);
 	color: white;
 	transition: 0.3s all ease;
 	-webkit-transition: 0.3s all ease;

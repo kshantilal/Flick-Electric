@@ -5,7 +5,7 @@
 
 #main-container {
   width: 375px; }
-  @media (min-width: 1024px) and (max-width: 1440px) {
+  @media (min-width: 1024px) and (max-width: 1980px) {
     #main-container {
       width: 1024px; }
       #main-container #sign-in {
@@ -38,7 +38,6 @@
         margin: 0 70px;
         position: absolute;
         top: 136px;
-        bottom: 0px;
         left: 0px;
         right: 0px; }
       #main-container #buttons {
@@ -56,20 +55,42 @@
       #main-container .background-splash {
         height: 400px;
         margin-top: 150px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1980px) {
     #main-container {
-      width: 1440px; }
-      #main-container .logo {
-        left: 48%; }
+      width: 1980px; }
       #main-container .section-image {
         position: relative;
         height: 100vh; }
       #main-container .Home-Automation-text {
-        padding-top: 500px; } }
+        padding-top: 575px; }
+      #main-container #signin-details {
+        width: 700px;
+        margin: 0 auto; }
+      #main-container input[type=text] {
+        padding: 30px 30px; }
+      #main-container input[type=password] {
+        padding: 30px 30px; }
+      #main-container .left-inner-addon i {
+        padding: 25px 25px; }
+      #main-container #enter {
+        padding: 25px; }
+      #main-container .logo {
+        left: 47%;
+        width: 110px; }
+      #main-container .maori-tiki {
+        width: 85px; }
+      #main-container .navbar-nav {
+        margin: 17px; }
+      #main-container #action {
+        top: 278px;
+        margin: 0 200px; }
+      #main-container .btn-new {
+        width: 100px;
+        padding: 25px; } }
 
 body {
   width: 100%;
-  background-color: #FFDF04;
+  background-color: #ffdf04;
   margin: 0px;
   font-family: 'Avenir', 'Open Sans', sans-serif; }
 
@@ -105,7 +126,7 @@ img {
   border-color: transparent; }
 
 .btn-default:hover {
-  background-color: #FFDF04; }
+  background-color: #ffdf04; }
 
 .navbar li {
   height: 70px;
@@ -206,7 +227,7 @@ input[type=password]:hover {
 
 .btn-new {
   width: 65px;
-  background-color: transparent;
+  background: rgba(0, 0, 0, 0.3);
   color: white;
   transition: 0.3s all ease;
   -webkit-transition: 0.3s all ease;
@@ -229,7 +250,7 @@ input[type=password]:hover {
   text-align: center;
   width: 300px;
   margin: 0 auto;
-  color: #FFDF04;
+  color: #ffdf04;
   padding-top: 330px;
   font-size: 20px;
   letter-spacing: 2px; }
@@ -254,7 +275,7 @@ input[type=password]:hover {
   height: 300px;
   margin-top: 150px;
   background: rgba(0, 0, 0, 0.7);
-  border: 2px solid #FFDF04;
+  border: 2px solid #ffdf04;
   border-radius: 6px; }
 
 .info-text {
@@ -340,10 +361,10 @@ input[type=password]:hover {
   transition: .2s; }
 
 input:checked + .slider {
-  background-color: #FFDF04; }
+  background-color: #ffdf04; }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #FFDF04; }
+  box-shadow: 0 0 1px #ffdf04; }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -373,7 +394,7 @@ input:checked + .slider:before {
   height: 50%;
   border-radius: 50%;
   content: "";
-  border: 3px solid #FFDF04;
+  border: 3px solid #ffdf04;
   background: rgba(0, 0, 0, 0.6); }
 
 .circle_inner {
@@ -400,5 +421,3 @@ input:checked + .slider:before {
 
 .row {
   margin: 0; }
-
-/*# sourceMappingURL=custom.css.map */
