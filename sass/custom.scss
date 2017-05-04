@@ -326,20 +326,20 @@ input[type=password]:hover{
 	position: absolute;
 	width: $max;
 	text-align: center;
-	top: 150px;
+	top: 130px;
 	color: white;
 	font-size: 40px; 
 }
 
 .section-image{ // NOTE: when the size changes to tablet change height to 100vh in media query
 	position: relative;
+	height: 234px;
 }
 
 .no-background{
-	// height: 100vh;
+	height: 100vh;
 	background-color: black; //Changes background color on sections
 }
-
 
 // ----Switches---- //
 

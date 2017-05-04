@@ -230,14 +230,16 @@ input[type=password]:hover {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 150px;
+  top: 130px;
   color: white;
   font-size: 40px; }
 
 .section-image {
-  position: relative; }
+  position: relative;
+  height: 234px; }
 
 .no-background {
+  height: 100vh;
   background-color: black; }
 
 .switches {
