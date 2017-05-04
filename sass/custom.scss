@@ -357,6 +357,10 @@ input[type=password]:hover{
 	-moz-transition: 0.3s all ease;
 }
 
+.btn-default:active:hover{
+	background-color: $primary-color;
+}
+
 #plus{
 	float: right; //places the plus button on the right.
 }
@@ -609,7 +613,6 @@ input:checked + .slider:before {
 .row{
 	margin: 0;
 }
-
 
 
 

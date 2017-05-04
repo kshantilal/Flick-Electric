@@ -234,6 +234,9 @@ input[type=password]:hover {
   -o-transition: 0.3s all ease;
   -moz-transition: 0.3s all ease; }
 
+.btn-default:active:hover {
+  background-color: #ffdf04; }
+
 #plus {
   float: right; }
 
