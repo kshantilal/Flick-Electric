@@ -11,7 +11,7 @@ $primary-color : #FFDF04;
 //breakpoints, change as needed for your site
 $pageMobileWidth: 375px;
 $pageTabletWidth: 1024px;
-$pageFullWidth: 1280px;
+$pageFullWidth: 1440px;
 
 //the mixins. there is no mediaMobile mixin because that should be the default styling
 @mixin mediaTablet {
@@ -103,6 +103,19 @@ $pageFullWidth: 1280px;
 			left: 0;
 		}
 
+		#action{
+			margin: 0 70px;
+			position: absolute;
+			top: 136px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+		}
+
+		#buttons{
+			margin-top: 20px;
+		}
+
 		//Contact Page Breakpoints
 		#contact-info{
 			width: 50%;
@@ -137,6 +150,10 @@ $pageFullWidth: 1280px;
 			position: relative;
 			height: 100vh;
 
+		}
+
+		.Home-Automation-text{
+			padding-top: 500px;
 		}
 	}
 }
@@ -204,6 +221,7 @@ img{
 }
  li a{ //makes the link in the list bigger so it is easier to click. covers more of the image. 
 	height: $max;
+	width: $max;
 }
 
 
@@ -527,6 +545,11 @@ input:checked + .slider:before {
 	color: white;
 }
 
+#value{ //changes the size of the number inside the circle
+	font-size: 30px;
+}
+
+
 
 // .blue{
 // 	// background-color: blue;
@@ -544,6 +567,7 @@ input:checked + .slider:before {
 .row{
 	margin: 0;
 }
+
 
 
 

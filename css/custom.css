@@ -5,7 +5,7 @@
 
 #main-container {
   width: 375px; }
-  @media (min-width: 1024px) and (max-width: 1280px) {
+  @media (min-width: 1024px) and (max-width: 1440px) {
     #main-container {
       width: 1024px; }
       #main-container #sign-in {
@@ -34,6 +34,15 @@
         top: 230px;
         right: 0;
         left: 0; }
+      #main-container #action {
+        margin: 0 70px;
+        position: absolute;
+        top: 136px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px; }
+      #main-container #buttons {
+        margin-top: 20px; }
       #main-container #contact-info {
         width: 50%;
         margin: 0 auto; }
@@ -47,14 +56,16 @@
       #main-container .background-splash {
         height: 400px;
         margin-top: 150px; } }
-  @media (min-width: 1280px) {
+  @media (min-width: 1440px) {
     #main-container {
-      width: 1280px; }
+      width: 1440px; }
       #main-container .logo {
         left: 48%; }
       #main-container .section-image {
         position: relative;
-        height: 100vh; } }
+        height: 100vh; }
+      #main-container .Home-Automation-text {
+        padding-top: 500px; } }
 
 body {
   width: 100%;
@@ -103,7 +114,8 @@ img {
   padding: 40px; }
 
 li a {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 .audio {
   margin: 0 10px;
@@ -382,6 +394,9 @@ input:checked + .slider:before {
   padding: 1em;
   vertical-align: middle;
   color: white; }
+
+#value {
+  font-size: 30px; }
 
 .row {
   margin: 0; }
