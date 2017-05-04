@@ -7,6 +7,11 @@
 $pageMobileWidth: 375px;
 $pageTabletWidth: 1024px;
 $pageFullWidth: 1280px;
+
+//----SASS VARIABLES----//
+$max : 100%;
+$half: 50%;
+$primary-color : #FFDF04;
 //the mixins. there is no mediaMobile mixin because that should be the default styling
 @mixin mediaTablet {
 	@media (min-width: #{$pageTabletWidth}) and (max-width: #{$pageFullWidth}) {
@@ -26,16 +31,42 @@ $pageFullWidth: 1280px;
 	width: $pageMobileWidth;
 	@include mediaTablet {
 		width: $pageTabletWidth;
-		.logo{
-			left: 47%;
+		
+		//Sign In Breakpoints
+
+		#sign-in{
+			width: 50%;
+			margin: 0 auto;
 		}
+
+		//Homepage BreakPoints
+		.logo{
+			left: 46%;
+			width: 80px;
+		}
+		
+		.Home-Automation-text{
+			font-size: 30px;
+			width: $max;
+			padding-top: 400px;
+		}
+
+		// NavBar
 		.navbar-nav{
 			margin: 6px;
 		}
+		.tiki-section{
+			width: 62px;
+		}
+		.maori-tiki{
+			margin: 5px;
+		}
 
+
+		//BreakPoints for function sections
 		.section-image{ //makes image the size of the viewport
-		position: relative;
-		height: 100vh;
+			position: relative;
+			height: 100vh;
 
 		}
 		.circle{
@@ -64,14 +95,6 @@ $pageFullWidth: 1280px;
 		}
 	}
 }
-
-
-
-//----SASS VARIABLES----//
-$max : 100%;
-$half: 50%;
-$primary-color : #FFDF04;
-
 
 
 // ----MIXINS----//
@@ -133,7 +156,7 @@ img{
 	margin-top:	20px; 
 	margin-left: 15px;
 	border-radius: 7px;
-	// border-color: transparent;
+	border-color: transparent;
 }
 
 .navbar-default{
@@ -146,6 +169,10 @@ img{
 }
 .navbar-toggle.collapsed{
 	border-color: transparent;
+}
+
+.btn-default:hover{
+	background-color: $primary-color;
 }
 .navbar li{
 	height: 70px;
@@ -191,7 +218,7 @@ img{
 
 
 .logo{
-	padding-top: 15px;
+	padding-top: 17px;
 	margin: 0 auto;
 	width: 60px;
 	text-align: center;
@@ -249,7 +276,7 @@ input[type=password]:hover{
 }
 
 #plus{
-	float: right; //places the minus button on the right.
+	float: right; //places the plus button on the right.
 }
 
 // ----Homepage CSS---- //
@@ -484,7 +511,6 @@ input:checked + .slider:before {
 .row{
 	margin: 0;
 }
-
 
 
 
