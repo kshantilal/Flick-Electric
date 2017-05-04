@@ -33,7 +33,20 @@
         position: absolute;
         top: 230px;
         right: 0;
-        left: 0; } }
+        left: 0; }
+      #main-container #contact-info {
+        width: 50%;
+        margin: 0 auto; }
+      #main-container .contact-title {
+        font-size: 40px; }
+      #main-container .info {
+        width: 400px; }
+      #main-container #all-contact-info {
+        margin-top: 85px;
+        font-size: 17px; }
+      #main-container .background-splash {
+        height: 400px;
+        margin-top: 150px; } }
   @media (min-width: 1280px) {
     #main-container {
       width: 1280px; }
@@ -218,19 +231,28 @@ input[type=password]:hover {
 .container {
   height: 100%; }
 
-.contact-page {
-  margin-top: 20px;
+.contact-title {
+  margin-top: 35px;
   color: white;
   text-align: center;
   width: 100%;
   font-size: 30px; }
 
 .background-splash {
-  height: 50%;
+  height: 300px;
   margin-top: 150px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   border: 2px solid #FFDF04;
   border-radius: 6px; }
+
+.info-text {
+  color: white;
+  text-align: center;
+  margin-top: 20px; }
+
+.info {
+  width: 300px;
+  margin: 0 auto; }
 
 .maori-tiki {
   float: right;
