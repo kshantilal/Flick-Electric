@@ -221,7 +221,7 @@ input[type=password]:hover{
  
  .btn-default{ //override boostrap button css
 	@include text-box;
-	padding: 10px 10px;
+	padding: 6px;
 	background-color: white;
 	border: 2px #9e9e9e solid;
  }
@@ -336,7 +336,7 @@ input[type=password]:hover{
 }
 
 .no-background{
-	height: 100vh;
+	// height: 100vh;
 	background-color: black; //Changes background color on sections
 }
 
@@ -469,6 +469,10 @@ input:checked + .slider:before {
 
 // }
 
+
+.row{
+	margin: 0;
+}
 
 
 
