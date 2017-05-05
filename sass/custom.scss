@@ -1,19 +1,19 @@
 *{
 	text-decoration: none;
 	padding: 0px;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 }
 //----SASS VARIABLES----//
 $max : 100%;
 $half: 50%;
 $primary-color : #FFDF04;
 
-//breakpoints, change as needed for your site
+//Breakpoints
 $pageMobileWidth: 375px;
 $pageTabletWidth: 1024px;
 $pageFullWidth: 1980px;
 
-//the mixins. there is no mediaMobile mixin because that should be the default styling
+//The Mixins. there is no mediaMobile mixin because that should be the default styling
 @mixin mediaTablet {
 	@media (min-width: #{$pageTabletWidth}) and (max-width: #{$pageFullWidth}) {
 		@content;
@@ -48,9 +48,7 @@ $pageFullWidth: 1980px;
 	margin: 0 auto;
 	
 }
-//an example of how to use the mixin. 
-//only the width will change if you resize the window.
-//Changes for media query in here
+
 #main-container {
 	width: $pageMobileWidth;
 	@include mediaTablet {
@@ -131,7 +129,6 @@ $pageFullWidth: 1980px;
 
 	@include mediaSmartTV {
 		width: $pageFullWidth;
-
 		//NAV BAR
 		.logo{
 			left: 47%;
@@ -157,7 +154,6 @@ $pageFullWidth: 1980px;
 		.Home-Automation-text{
 			padding-top: 575px;
 		}
-
 		input[type=text]{
 			padding: 30px 30px;
 		}
@@ -197,7 +193,6 @@ $pageFullWidth: 1980px;
 		}
 
 		//Contact Page Breakpoints
-
 		#contact-info{
 			margin: 45px auto;
 		}
@@ -212,11 +207,8 @@ $pageFullWidth: 1980px;
 			margin-top: 50px;
 			width: 560px;
 		}
-
-
 	}
 }
-
 
 
 body{
@@ -248,7 +240,6 @@ img{
 
 
 // ----NAV-BAR OVERIDE---- //
-
 .navbar-toggle{
 	float: left;
 	margin-top:	20px; 
@@ -256,19 +247,16 @@ img{
 	border-radius: 7px;
 	border-color: transparent;
 }
-
 .navbar-default{
 	background-color: black;
 	border-color: white;
 }
-
 #navbar{
 	border-color: white;
 }
 .navbar-toggle.collapsed{
 	border-color: transparent;
 }
-
 .btn-default:hover{
 	background-color: $primary-color;
 }
@@ -285,37 +273,30 @@ img{
 
 
 // ----NAV-BAR Icons---- //
-
 .audio{
 	margin: 0 10px;
 	background-image: url('../img/audio60.png');
 	background-repeat: no-repeat;
 	background-position: $half;
-
 }
-
 .lights{
 	margin: 0 10px;
 	background-image: url('../img/light60.png');
 	background-repeat: no-repeat;
 	background-position: $half;
 }
-
 .thermometer{
 	margin: 0 10px;
 	background-image: url('../img/thermometer60.png');
 	background-repeat: no-repeat;
 	background-position: $half;
 }
-
 .contact{
 	margin: 0 10px;
 	background-image: url('../img/contact60.png');
 	background-repeat: no-repeat;
 	background-position: $half;
 }
-
-
 .logo{
 	padding-top: 17px;
 	margin: 0 auto;
@@ -324,46 +305,37 @@ img{
 	position: absolute;
 	left: 42%;
 }
+
+
 //----Input Fields----//
-
-
 input[type=text]{
 	@include text-box;
 }
-
 input[type=text]:hover{
 	background-color: white;
 }
-
 input[type=password]{
 	@include text-box;
 }
-
 input[type=password]:hover{
 	background-color: white;
 }
-
-
 .left-inner-addon {
 	position: relative;
-
 }
-
 .left-inner-addon i {
 	position: absolute;
 	padding: 15px 12px;
 }
 
+
 // ----BUTTON----//
- 
  .btn-default{ //override boostrap button css
 	@include text-box;
 	padding: 6px;
 	background-color: white;
 	border: 2px #9e9e9e solid;
  }
-
-
 .btn-new{ //changes the size of buttons in the different sections eg audio, lights, temperature
 	width: 65px;
 	background:rgba(0,0,0,0.3);
@@ -373,11 +345,9 @@ input[type=password]:hover{
 	-o-transition: 0.3s all ease;
 	-moz-transition: 0.3s all ease;
 }
-
 .btn-default:active:hover{
 	background-color: $primary-color;
 }
-
 #plus{
 	float: right; //places the plus button on the right.
 }
@@ -385,8 +355,8 @@ input[type=password]:hover{
 	float: left;
 }
 
-// ----Homepage CSS---- //
 
+// ----Homepage CSS---- //
 .background-image{
 	width: $max;
 	height: 100vh;
@@ -397,8 +367,8 @@ input[type=password]:hover{
 	padding-top: 50px;
 }
 
-// ---- English to Maori Translation ---- //
 
+// ---- English to Maori Translation ---- //
 .Home-Automation-text{	// Welcome to your home automation text
 	@include text-center;
 	color: $primary-color;
@@ -406,21 +376,18 @@ input[type=password]:hover{
 	font-size: 20px;
 	letter-spacing: 2px;
 }
-
 .maori-text{	//Hides the maori text
 	display: none;
 }
-
 .english-text{	//Shows the english text
 	display: block;
 }
 
-// ----Contact Page CSS---- //
 
+// ----Contact Page CSS---- //
 .container{
 	height: $max;
 }
-
 .contact-title{
 	margin-top: 35px;
 	color: white;
@@ -428,7 +395,6 @@ input[type=password]:hover{
 	width: $max;
 	font-size: 30px;
 }
-
 .background-splash{
 	height: 300px;
 	margin-top: 150px;
@@ -436,13 +402,11 @@ input[type=password]:hover{
 	border: 2px solid $primary-color;
 	border-radius: 6px;
 }
-
 .info-text{
 	color: white;
 	text-align: center;
 	margin-top: 20px;
 }
-
 .info{
 	width: 320px;
 	margin: 0 auto;
@@ -450,24 +414,20 @@ input[type=password]:hover{
 
 
 // ----Maori Image---- //
-
 .maori-tiki{
 	img{
 		margin: 0px;
 		float: right;
-
-	}	//Positioning of the Maori Tiki image
+	}	
+		//Positioning of the Maori Tiki image
 		float: right;
 		margin: 10px;
 		display: block;
 		width: 25%;
-		}
-
-
+}
 .tiki-section{	//Places the tiki on top of the section image
 	width: 40px;
 }
-
 .language{
 	text-align: center;
 	color: white;
@@ -476,7 +436,6 @@ input[type=password]:hover{
 
 
 // Top Section Image and text
-
 .section-text{
 	position: absolute;
 	width: $max;
@@ -485,19 +444,17 @@ input[type=password]:hover{
 	color: white;
 	font-size: 40px; 
 }
-
 .section-image{ // NOTE: when the size changes to tablet change height to 100vh in media query
 	position: relative;
 	height: 234px;
 }
-
 .no-background{
-	height: 100vh;
+	// height: 100vh;
 	background-color: black; //Changes background color on sections
 }
 
-// ----Switches---- //
 
+// ----Switches---- //
 .switches{
 	text-align: center;
 }
@@ -511,7 +468,6 @@ input[type=password]:hover{
 	display: inline-block;
 	width: 60px;
 	height: 34px;
-
 }
 
 /* Hide default HTML checkbox */
@@ -529,7 +485,6 @@ input[type=password]:hover{
 	-webkit-transition: .2s;
 	transition: .2s;
 }
-
 .slider:before {
 	position: absolute;
 	content: "";
@@ -541,15 +496,12 @@ input[type=password]:hover{
 	-webkit-transition: .2s;
 	transition: .2s;
 }
-
 input:checked + .slider {
 	background-color: $primary-color;
 }
-
 input:focus + .slider {
 	box-shadow: 0 0 1px $primary-color;
 }
-
 input:checked + .slider:before {
 	-webkit-transform: translateX(26px);
 	-ms-transform: translateX(26px);
@@ -560,13 +512,12 @@ input:checked + .slider:before {
 .slider.round {
 	border-radius: 34px;
 }
-
 .slider.round:before {
 	border-radius: 50%;
 }
 
-// ----Circles---- //
 
+// ----Circles---- //
 .circle {
 	width: 60%;
 	margin: 10px auto;
@@ -576,8 +527,7 @@ input:checked + .slider:before {
 	color: #222;
 	text-align: center;
 }
-
-	.circle:after { // the styling of the circle border radius.
+.circle:after { // the styling of the circle border radius.
 	display: block;
 	padding-bottom: 100%;
 	width: 100%;
@@ -587,47 +537,28 @@ input:checked + .slider:before {
 	border: 3px solid $primary-color;
 	background:rgba(0,0,0,0.6); //changes the background colour inside the circle to semi transparant
 }
-
-	.circle_inner {
+.circle_inner {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-
 }
-
-	.circle_wrapper {
+.circle_wrapper {
 	display: table;
 	width: 100%;
 	height: 100%;
 }
-
-	.circle_content { //centers the number in the middle of the circle
+.circle_content { //centers the number in the middle of the circle
 	display: table-cell;
 	padding: 1em;
 	vertical-align: middle;
 	color: white;
 }
-
 #value{ //changes the size of the number inside the circle
 	font-size: 30px;
 }
-
-
-
-// .blue{
-// 	// background-color: blue;
-// 	border: 1px solid blue;
-
-// }
-
-// .red{
-// 	// background-color: red;
-// 	border: 1px solid red;
-
-// }
 
 
 .row{

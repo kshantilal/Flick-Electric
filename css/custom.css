@@ -343,7 +343,6 @@ input[type=password]:hover {
   height: 234px; }
 
 .no-background {
-  height: 100vh;
   background-color: black; }
 
 .switches {
