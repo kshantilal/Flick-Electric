@@ -8,6 +8,12 @@
   @media (min-width: 1024px) and (max-width: 1980px) {
     #main-container {
       width: 1024px; }
+      #main-container .navbar-nav {
+        margin: 6px; }
+      #main-container .tiki-section {
+        width: 62px; }
+      #main-container .maori-tiki {
+        margin: 5px; }
       #main-container #sign-in {
         width: 50%;
         margin: 0 auto; }
@@ -18,12 +24,6 @@
         font-size: 30px;
         width: 100%;
         padding-top: 400px; }
-      #main-container .navbar-nav {
-        margin: 6px; }
-      #main-container .tiki-section {
-        width: 62px; }
-      #main-container .maori-tiki {
-        margin: 5px; }
       #main-container .section-image {
         position: relative;
         height: 100vh; }
@@ -58,14 +58,20 @@
   @media (min-width: 1980px) {
     #main-container {
       width: 1980px; }
-      #main-container .section-image {
-        position: relative;
-        height: 100vh; }
-      #main-container .Home-Automation-text {
-        padding-top: 575px; }
+      #main-container .logo {
+        left: 47%;
+        width: 110px; }
+      #main-container .maori-tiki {
+        width: 85px; }
+      #main-container .navbar-nav {
+        margin: 17px; }
+      #main-container .logo-gif {
+        margin-top: 0px; }
       #main-container #signin-details {
         width: 700px;
         margin: 0 auto; }
+      #main-container .Home-Automation-text {
+        padding-top: 575px; }
       #main-container input[type=text] {
         padding: 30px 30px; }
       #main-container input[type=password] {
@@ -74,23 +80,37 @@
         padding: 25px 25px; }
       #main-container #enter {
         padding: 25px; }
-      #main-container .logo {
-        left: 47%;
-        width: 110px; }
-      #main-container .maori-tiki {
-        width: 85px; }
-      #main-container .navbar-nav {
-        margin: 17px; }
+      #main-container .section-image {
+        position: relative;
+        height: 100vh; }
+      #main-container .section-text {
+        margin-top: 20px; }
       #main-container #action {
         top: 278px;
         margin: 0 200px; }
       #main-container .btn-new {
         width: 100px;
-        padding: 25px; } }
+        padding: 25px; }
+      #main-container #functions {
+        width: 80%;
+        margin: 0 auto; }
+      #main-container #buttons {
+        font-size: 20px;
+        margin-top: 60px; }
+      #main-container #contact-info {
+        margin: 45px auto; }
+      #main-container #all-contact-info {
+        margin-top: 150px;
+        font-size: 25px; }
+      #main-container .background-splash {
+        height: 650px; }
+      #main-container .info {
+        margin-top: 50px;
+        width: 560px; } }
 
 body {
   width: 100%;
-  background-color: #ffdf04;
+  background-color: #FFDF04;
   margin: 0px;
   font-family: 'Avenir', 'Open Sans', sans-serif; }
 
@@ -126,7 +146,7 @@ img {
   border-color: transparent; }
 
 .btn-default:hover {
-  background-color: #ffdf04; }
+  background-color: #FFDF04; }
 
 .navbar li {
   height: 70px;
@@ -235,10 +255,13 @@ input[type=password]:hover {
   -moz-transition: 0.3s all ease; }
 
 .btn-default:active:hover {
-  background-color: #ffdf04; }
+  background-color: #FFDF04; }
 
 #plus {
   float: right; }
+
+#minus {
+  float: left; }
 
 .background-image {
   width: 100%;
@@ -253,7 +276,7 @@ input[type=password]:hover {
   text-align: center;
   width: 300px;
   margin: 0 auto;
-  color: #ffdf04;
+  color: #FFDF04;
   padding-top: 330px;
   font-size: 20px;
   letter-spacing: 2px; }
@@ -278,7 +301,7 @@ input[type=password]:hover {
   height: 300px;
   margin-top: 150px;
   background: rgba(0, 0, 0, 0.7);
-  border: 2px solid #ffdf04;
+  border: 2px solid #FFDF04;
   border-radius: 6px; }
 
 .info-text {
@@ -287,7 +310,7 @@ input[type=password]:hover {
   margin-top: 20px; }
 
 .info {
-  width: 300px;
+  width: 320px;
   margin: 0 auto; }
 
 .maori-tiki {
@@ -364,10 +387,10 @@ input[type=password]:hover {
   transition: .2s; }
 
 input:checked + .slider {
-  background-color: #ffdf04; }
+  background-color: #FFDF04; }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #ffdf04; }
+  box-shadow: 0 0 1px #FFDF04; }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -397,7 +420,7 @@ input:checked + .slider:before {
   height: 50%;
   border-radius: 50%;
   content: "";
-  border: 3px solid #ffdf04;
+  border: 3px solid #FFDF04;
   background: rgba(0, 0, 0, 0.6); }
 
 .circle_inner {
@@ -424,3 +447,5 @@ input:checked + .slider:before {
 
 .row {
   margin: 0; }
+
+/*# sourceMappingURL=custom.css.map */

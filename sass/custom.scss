@@ -20,7 +20,7 @@ $pageFullWidth: 1980px;
 
 	}
 }
-@mixin mediaDesktop {
+@mixin mediaSmartTV {
 	@media (min-width: #{$pageFullWidth}) {
 		@content;
 	}
@@ -55,26 +55,6 @@ $pageFullWidth: 1980px;
 	width: $pageMobileWidth;
 	@include mediaTablet {
 		width: $pageTabletWidth;
-		
-		//Sign In Breakpoints
-
-		#sign-in{
-			width: 50%;
-			margin: 0 auto;
-		}
-
-		//Homepage BreakPoints
-		.logo{
-			left: 46%;
-			width: 80px;
-		}
-		
-		.Home-Automation-text{
-			font-size: 30px;
-			width: $max;
-			padding-top: 400px;
-		}
-
 		// NavBar
 		.navbar-nav{
 			margin: 6px;
@@ -85,24 +65,37 @@ $pageFullWidth: 1980px;
 		.maori-tiki{
 			margin: 5px;
 		}
+		
+		//Login Page Breakpoints
+		#sign-in{
+			width: 50%;
+			margin: 0 auto;
+		}
+		//Homepage BreakPoints
+		.logo{
+			left: 46%;
+			width: 80px;
+		}
+		.Home-Automation-text{
+			font-size: 30px;
+			width: $max;
+			padding-top: 400px;
+		}
 
-		//BreakPoints for function sections
+		//Function Section Breakpoints
 		.section-image{ //makes image the size of the viewport
 			position: relative;
 			height: 100vh;
-
 		}
 		.circle{
 			width: 30%;
 		}
-
 		#functions{
 			position: absolute;
 			top: 230px;
 			right: 0;
 			left: 0;
 		}
-
 		#action{
 			margin: 0 70px;
 			position: absolute;
@@ -110,7 +103,6 @@ $pageFullWidth: 1980px;
 			left: 0px;
 			right: 0px;
 		}
-
 		#buttons{
 			margin-top: 20px;
 		}
@@ -119,7 +111,6 @@ $pageFullWidth: 1980px;
 		#contact-info{
 			width: 50%;
 			margin: 0 auto;
-
 		}
 		.contact-title{
 			font-size: 40px;
@@ -127,12 +118,10 @@ $pageFullWidth: 1980px;
 		.info{
 			width: 400px;
 		}
-
 		#all-contact-info{
 			margin-top: 85px;
 			font-size: 17px;
 		}
-
 		.background-splash{
 			height: 400px;
 			margin-top: 150px;
@@ -140,23 +129,35 @@ $pageFullWidth: 1980px;
 	}
 	
 
-	@include mediaDesktop {
+	@include mediaSmartTV {
 		width: $pageFullWidth;
 
-		.section-image{ //makes image the size of the viewport
-			position: relative;
-			height: 100vh;
+		//NAV BAR
+		.logo{
+			left: 47%;
+			width: 110px;
 		}
-
-		.Home-Automation-text{
-			padding-top: 575px;
+		.maori-tiki{
+			width: 85px;
 		}
-
+		.navbar-nav{
+			margin: 17px;
+		}
+		
 		//Login Page Breakpoints
+		.logo-gif{
+			margin-top: 0px;
+		}
 		#signin-details{
 			width: 700px;
 			margin: 0 auto;
 		}
+		
+		//Homepage Breakpoints
+		.Home-Automation-text{
+			padding-top: 575px;
+		}
+
 		input[type=text]{
 			padding: 30px 30px;
 		}
@@ -166,36 +167,52 @@ $pageFullWidth: 1980px;
 		.left-inner-addon i{
 			padding: 25px 25px;
 		}
-
 		#enter{
 			padding: 25px;
 		}
-
-		//NAV BAR
-		.logo{
-			left: 47%;
-			width: 110px;
-		}
-
-		.maori-tiki{
-			width: 85px;
-		}
-
-		.navbar-nav{
-			margin: 17px;
-
-		}
 		
-		//Functions Sections
+		//Function Section Breakpoints
+		.section-image{ //makes image the size of the viewport
+			position: relative;
+			height: 100vh;
+		}
+		.section-text{
+			margin-top: 20px;
+		}
 		#action{
 			top: 278px;
 			margin: 0 200px;
 		}
-
 		.btn-new{
 			width: 100px;
 			padding: 25px;
 		}
+		#functions{
+			width: 80%;
+			margin: 0 auto;
+		}
+		#buttons{
+			font-size: 20px;
+			margin-top: 60px;
+		}
+
+		//Contact Page Breakpoints
+
+		#contact-info{
+			margin: 45px auto;
+		}
+		#all-contact-info{
+			margin-top: 150px;
+			font-size: 25px;
+		}
+		.background-splash{
+			height: 650px;
+		}
+		.info{
+			margin-top: 50px;
+			width: 560px;
+		}
+
 
 	}
 }
@@ -364,6 +381,9 @@ input[type=password]:hover{
 #plus{
 	float: right; //places the plus button on the right.
 }
+#minus{
+	float: left;
+}
 
 // ----Homepage CSS---- //
 
@@ -424,7 +444,7 @@ input[type=password]:hover{
 }
 
 .info{
-	width: 300px;
+	width: 320px;
 	margin: 0 auto;
 }
 
