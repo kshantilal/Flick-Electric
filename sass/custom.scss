@@ -104,6 +104,15 @@ $pageFullWidth: 1980px;
 		#buttons{
 			margin-top: 20px;
 		}
+		.button-icon{
+			font-size: 30px;
+		}
+		.btn-new{
+			width: 80px;
+		}
+		.btn-default{
+			padding: 0px;
+		}
 
 		//Contact Page Breakpoints
 		#contact-info{
@@ -181,7 +190,7 @@ $pageFullWidth: 1980px;
 		}
 		.btn-new{
 			width: 100px;
-			padding: 25px;
+			padding: 5px;
 		}
 		#functions{
 			width: 80%;
@@ -217,12 +226,10 @@ body{
 	margin: 0px;
 	font-family: 'Avenir', 'Open Sans', sans-serif;
 }
-
 img{
 	width: $max;
 	height: $max;
 }
-
 #main-container{
 	width: $max;
 	height: $max;
@@ -233,7 +240,6 @@ img{
 	margin: 0px 20px;
 
 }
-
 .logo-gif{
 	margin-top: 50px;
 }
@@ -559,12 +565,13 @@ input:checked + .slider:before {
 #value{ //changes the size of the number inside the circle
 	font-size: 30px;
 }
-
-
+#thermo{ //inputs thermostat degrees size
+	font-size: 30px;
+	font-weight: 100;
+}
 .row{
 	margin: 0;
 }
-
 
 
 

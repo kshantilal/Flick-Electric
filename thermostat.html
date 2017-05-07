@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Thermometer</title>
+	<title>Thermostat</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/fav-icon.jpg">
-
 </head>
 <body>
 	<div id="main-container">
@@ -33,7 +33,7 @@
 					<ul class="nav navbar-nav">
 						<li class="audio"><a href="audio.html"></a></li>
 						<li class="lights"><a href="lights.html"></a></li>
-						<li class="thermometer"><a href="thermometer.html"></a></li>
+						<li class="thermometer"><a href="thermostat.html"></a></li>
 						<li class="contact"><a href="contact.html"></a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
@@ -45,8 +45,8 @@
 			<div class="section">
 				<div class="section-image">
 					<img src="img/heater-background.png" alt="section-image">
-					<p class="section-text english-text">THERMOMETER</p>
-					<p class="section-text maori-text">ine</p>
+					<p class="section-text english-text">THERMOSTAT</p>
+					<p class="section-text maori-text">ine mahana</p>
 				</div>
 				<div id="functions">
 					<div id="circle-row">
@@ -54,8 +54,8 @@
 							<div class="col-xs-12">
 								<div class="circle">
 									<div class="circle_inner">
-										<div class="circle_wrapper">
-											<div class="circle_content"><span id="value"> 0 </span></div>
+										<div class="circle_wrapper"> <!--   &#176;-->
+											<div class="circle_content"><span id="value"> 0 </span><span id="thermo">&#8451;</span></div>
 										</div>
 									</div>
 								</div>
@@ -65,10 +65,10 @@
 						<div id="action">
 							<div class="row">
 								<div class="col-xs-3">
-									<div class="btn btn-sm btn-default btn-new" id="minus"> - </div>
+									<div class="btn btn-sm btn-default btn-new" id="minus"><span class="button-icon"> - </span></div>
 								</div>
 								<div class="col-xs-3 col-xs-offset-6">
-									<div class="btn btn-sm btn-default btn-new" id="plus"> + </div>
+									<div class="btn btn-sm btn-default btn-new" id="plus"><span class="button-icon"> + </span></div>
 								</div>
 							</div>
 						</div>
