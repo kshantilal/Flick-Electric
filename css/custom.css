@@ -17,6 +17,8 @@
       #main-container #sign-in {
         width: 50%;
         margin: 0 auto; }
+      #main-container .btn-default {
+        padding: 10px; }
       #main-container .logo {
         left: 46%;
         width: 80px; }
@@ -45,8 +47,7 @@
       #main-container .button-icon {
         font-size: 30px; }
       #main-container .btn-new {
-        width: 80px; }
-      #main-container .btn-default {
+        width: 80px;
         padding: 0px; }
       #main-container #contact-info {
         width: 50%;
