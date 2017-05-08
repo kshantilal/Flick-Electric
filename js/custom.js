@@ -9,32 +9,25 @@ $(document).ready(function() {
 
 	});
 
-	// When the Minus and Plus buttons are clicked, #value increases by 5
-	//#value is the number inside the circles which change
-	$(function(){
+	// // When the Minus and Plus buttons are clicked, #value increases by 5
+	// //#value is the number inside the circles which change
+	var increment = 5;
+	var valueElement = $('#value');
+	var value = parseInt(valueElement.text());
 
-		var valueElement = $('#value');
-		function incrementValue(e){
-			valueElement.text(Math.max(parseInt(valueElement.text()) + e.data.increment, 0));
-			return false;
+	$('#plus').click(function(){
+		if(value < 100){
+			value = value + increment;
 		}
-
-		$('#plus').bind('click', {increment: 5}, incrementValue);
-
-		$('#minus').bind('click', {increment: -5}, incrementValue);
+		valueElement.text(value);
 
 	});
-
-	// $('#plus').click(function(){
-	// 	$('#value').removeClass('blue');
-	// 	$('#value').addClass('red');
-	// });
-
-	// $('#minus').click(function(){
-	// 	$('#value').removeClass('red');
-	// 	$('#value').addClass('blue');
-	// })
-
+	$('#minus').click(function(){
+		if(value > 0){
+			value = value - increment;
+		}
+		valueElement.text(value);
+	});
 
 
 });
