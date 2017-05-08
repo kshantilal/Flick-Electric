@@ -117,7 +117,7 @@
 
 body {
   width: 100%;
-  background-color: #FFDF04;
+  background-color: #ffdf04;
   margin: 0px;
   font-family: 'Avenir', 'Open Sans', sans-serif; }
 
@@ -153,13 +153,16 @@ img {
   border-color: transparent; }
 
 .btn-default:hover {
-  background-color: #FFDF04; }
+  background-color: #ffdf04; }
 
 .navbar li {
   height: 70px;
   width: 60px;
   margin: 0 auto;
   padding: 40px; }
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 100%; }
 
 li a {
   height: 100%;
@@ -186,6 +189,12 @@ li a {
 .contact {
   margin: 0 10px;
   background-image: url("../img/contact60.png");
+  background-repeat: no-repeat;
+  background-position: 50%; }
+
+.logout {
+  margin: 0 10px;
+  background-image: url("../img/logout.png");
   background-repeat: no-repeat;
   background-position: 50%; }
 
@@ -262,7 +271,7 @@ input[type=password]:hover {
   -moz-transition: 0.3s all ease; }
 
 .btn-default:active:hover {
-  background-color: #FFDF04; }
+  background-color: #ffdf04; }
 
 #plus {
   float: right; }
@@ -283,7 +292,7 @@ input[type=password]:hover {
   text-align: center;
   width: 300px;
   margin: 0 auto;
-  color: #FFDF04;
+  color: #ffdf04;
   padding-top: 330px;
   font-size: 20px;
   letter-spacing: 2px; }
@@ -308,7 +317,7 @@ input[type=password]:hover {
   height: 300px;
   margin-top: 150px;
   background: rgba(0, 0, 0, 0.7);
-  border: 2px solid #FFDF04;
+  border: 2px solid #ffdf04;
   border-radius: 6px; }
 
 .info-text {
@@ -393,10 +402,10 @@ input[type=password]:hover {
   transition: .2s; }
 
 input:checked + .slider {
-  background-color: #FFDF04; }
+  background-color: #ffdf04; }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #FFDF04; }
+  box-shadow: 0 0 1px #ffdf04; }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -426,7 +435,7 @@ input:checked + .slider:before {
   height: 50%;
   border-radius: 50%;
   content: "";
-  border: 3px solid #FFDF04;
+  border: 3px solid #ffdf04;
   background: rgba(0, 0, 0, 0.6); }
 
 .circle_inner {
@@ -457,5 +466,3 @@ input:checked + .slider:before {
 
 .row {
   margin: 0; }
-
-/*# sourceMappingURL=custom.css.map */

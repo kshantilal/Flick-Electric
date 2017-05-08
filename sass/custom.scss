@@ -274,6 +274,11 @@ img{
 	margin: 0 auto; //centers icons in navbar
 	padding: 40px;
 }
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
+	max-height: $max;
+}
+
  li a{ //makes the link in the list bigger so it is easier to click. covers more of the image. 
 	height: $max;
 	width: $max;
@@ -302,6 +307,13 @@ img{
 .contact{
 	margin: 0 10px;
 	background-image: url('../img/contact60.png');
+	background-repeat: no-repeat;
+	background-position: $half;
+}
+
+.logout{
+	margin: 0 10px;
+	background-image: url('../img/logout.png');
 	background-repeat: no-repeat;
 	background-position: $half;
 }
